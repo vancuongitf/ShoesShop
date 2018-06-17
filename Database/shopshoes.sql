@@ -71,8 +71,8 @@ DROP TABLE IF EXISTS `baskets_shoes`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `baskets_shoes` (
   `basket_id` bigint(20) NOT NULL,
-  `shoes_id` bigint(20) NOT NULL,
-  PRIMARY KEY (`basket_id`,`shoes_id`)
+  `shoe_id` bigint(20) NOT NULL,
+  PRIMARY KEY (`basket_id`,`shoe_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -147,8 +147,8 @@ CREATE TABLE `orders_shoes` (
   `price` double NOT NULL,
   `quantity` int(11) NOT NULL,
   `order_id` bigint(20) NOT NULL,
-  `shoes_id` bigint(20) NOT NULL,
-  PRIMARY KEY (`order_id`,`shoes_id`)
+  `shoe_id` bigint(20) NOT NULL,
+  PRIMARY KEY (`order_id`,`shoe_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -302,4 +302,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-06-17 16:29:09
+-- Dump completed on 2018-06-17 16:44:03
